@@ -1,3 +1,5 @@
+package Part_1;
+
 public class Task5 {
     public static void symbolValue(String str) {
         char currSymb;

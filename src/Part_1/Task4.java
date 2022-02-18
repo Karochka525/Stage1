@@ -1,3 +1,5 @@
+package Part_1;
+
 public class Task4 {
     public static void printRandomArray(){
         int[] myArray=new int[30];

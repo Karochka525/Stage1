@@ -1,3 +1,5 @@
+package Part_1;
+
 public class Task7 {
     public static String getDayAddition(int num) {
         int preLastDigit = num % 100 / 10;

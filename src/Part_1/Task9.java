@@ -1,3 +1,5 @@
+package Part_1;
+
 public class Task9 {
     public static void isPolyndrom(String str){
         str = str.toLowerCase().replaceAll(" ", "");
