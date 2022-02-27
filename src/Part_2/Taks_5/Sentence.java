@@ -3,17 +3,22 @@ package Part_2.Taks_5;
 import java.util.Objects;
 
 public class Sentence {
-    private final Word[] words;
+    private Word[] words;
 
     public Sentence(String[] originalStr) {
-        words = new Word[originalStr.length];
-        for (int i = 0; i < originalStr.length; i++) {
-            words[i] = (Objects.nonNull(originalStr[i]))
-                    ? new Word(originalStr[i])
-                    : new Word("");
-        }
+        setWordsByStringArr(originalStr);
         System.out.println("Модель создана!");
     }
+
+    public void setWordsByStringArr(String[] sentence) {
+        words = new Word[sentence.length];
+        for (int i = 0; i < words.length; i++) {
+            words[i] = (Objects.nonNull(sentence[i]))
+                    ? new Word(sentence[i])
+                    : new Word("");
+        }
+    }
+
     public int getWordsCount(){
         return  words.length;
     }
